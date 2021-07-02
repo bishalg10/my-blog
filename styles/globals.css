@@ -1,16 +1,148 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+    --color-primary-lighter: #C8FACD;
+    --color-primary-light: #5BE584;
+    --color-primary: #00AB55;
+    --color-primary-dark: #007B55;
+    --color-primary-darker: #005249;
+
+    --color-secondary-lighter: #D6E4FF;
+    --color-secondary-light: #84A9FF;
+    --color-secondary: #3366FF;
+    --color-secondary-dark: #1939B7;
+    --color-secondary-darker: #091A7A;
+
+    --color-info-lighter: #D0F2FF;
+    --color-info-light: #74CAFF;
+    --color-info: #1890FF;
+    --color-info-dark: #0C53B7;
+    --color-info-darker: #04297A;
+
+    --color-success-lighter: #E9FCD4;
+    --color-success-light: #AAF27F;
+    --color-success: #54D62C;
+    --color-success-dark: #229A16;
+    --color-success-darker: #08660D;
+
+    --color-warning-lighter: #FFF7CD;
+    --color-warning-light: #FFE16A;
+    --color-warning: #FFC107;
+    --color-warning-dark: #B78103;
+    --color-warning-darker: #7A4F01;
+
+    --color-error-lighter: #FFE7D9;
+    --color-error-light: #FFA48D;
+    --color-error: #FF4842;
+    --color-error-dark: #B72136;
+    --color-error-darker: #B72136;
+
+    --color-grey-100: #F9FAFB;
+    --color-grey-200: #F4F6F8;
+    --color-grey-300: #DFE3E8;
+    --color-grey-400: #C4CDD5;
+    --color-grey-500: #C4CDD5;
+    --color-grey-600: #637381;
+    --color-grey-700: #454F5B;
+    --color-grey-800: #212B36;
+    --color-grey-900: #161C24;
+
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {font-family: 'Oswald', 'Roboto', sans-serif;}
+
+h1, h2, h3, h4, h5, h6 {margin-top: 0; margin-bottom: 0;}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+h1, .h1 {font-size: 64px; line-height: 80px; font-weight: 700;}
+h2, .h2 {font-size: 48px; line-height: 64px; font-weight: 700;}
+h3, .h3 {font-size: 32px; line-height: 48px; font-weight: 700;}
+h4, .h4 {font-size: 24px; line-height: 36px; font-weight: 700;}
+h5, .h5 {font-size: 20px; line-height: 30px; font-weight: 700;}
+h6, .h6 {font-size: 18px; line-height: 28px; font-weight: 700;}
+
+.subtitle1 {font-size: 16px; line-height: 24px; font-weight: 600;}
+.subtitle2 {font-size: 14px; line-height: 22px; font-weight: 600;}
+
+.body1 {font-size: 16px; line-height: 24px; font-weight: 400;}
+.body2 {font-size: 14px; line-height: 22px; font-weight: 400;}
+
+.caption {font-size: 14px; line-height: 22px; font-weight: 400;}
+.overline {font-size: 12px; line-height: 18px; font-weight: 700; font-variant: all-petite-caps;}
+.button {font-size: 14px; line-height: 24px; font-weight: 700;}
+
+
+header {
+    background: var(--color-grey-800);
+    color: var(--color-grey-400);
+    padding: 1rem 16rem;
+    overflow: hidden;
+}
+
+header * {display: inline-block;}
+header .logo {float: left;}
+header nav {float: right;}
+header nav li {margin: 0 8px;}
+
+
+.hero {
+    background: var(--color-grey-800);
+    padding: 4rem;
+    color: var(--color-grey-200);
+    text-align: center;
+}
+
+.hero img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero h1 {margin-top: 1.5rem}
+
+.featured-posts {
+    padding: 2rem 16rem;
+}
+
+.featured-posts ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+}
+
+.featured-posts ul li {
+    background: var(--color-grey-900);
+    color: var(--color-grey-400);
+    margin-bottom: 3rem;
+}
+
+.featured-posts ul li:nth-child(3n+2) {
+    margin: 0 3rem auto;
+}
+
+.featured-posts ul li .post-detail {
+    padding: 2rem;
+    text-align: center;
+}
+
+.featured-posts ul li .post-detail h4 {
+    margin-bottom: .4rem;
+}
+
+.featured-posts ul li .post-detail time {
+    font-style: italic;
+    color: var(--color-grey-600);
 }
