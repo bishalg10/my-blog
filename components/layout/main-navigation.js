@@ -6,11 +6,11 @@ const MainNavigation = () => {
     return <header>
         <Link href="/">
             <a className="logo h3">
-                Kumar's Blog
+                Kumar&apos;s Blog
             </a>
         </Link>
         <nav>
-            <ul className="">
+            <ul>
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/posts">Blogs</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
