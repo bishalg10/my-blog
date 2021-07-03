@@ -19,7 +19,7 @@ const PostContent = props => {
     }
 
     return <section>
-        <article className="post-content">
+        <article>
             <div className="post-header">
                 <h1>{title}</h1>
                 <Image src={imagePath} alt={title} width={200} height={150} />

@@ -144,7 +144,7 @@ header nav li {margin: 0 8px;}
 }
 
 
-.post-content {
+article {
     background: var(--color-grey-300);
     padding: 3rem;
     border-radius: .4rem;
@@ -159,3 +159,60 @@ header nav li {margin: 0 8px;}
     border-bottom: .6rem solid var(--color-primary-dark);
 }
 .post-header img {object-fit: cover;}
+
+
+.contact-form {width: 60%; margin: auto; overflow: hidden}
+.contact-form form {margin-top: 1rem;}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-control * {
+    display: block;
+    width: 100%;
+}
+
+.form-control input, .form-control textarea {
+    padding: .6rem;
+    border-radius: .2rem;
+    border: 1px solid var(--color-grey-500);
+    margin-top: .4rem;
+}
+
+.form-control input:focus, .form-control textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary-light);
+}
+
+.button {
+    padding: .4rem 1rem;
+    background: var(--color-primary);
+    color: var(--color-grey-100);
+    border: 1px solid;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.contact-form .button {float: right;}
+
+
+.notification {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--color-grey-300);
+    padding: 1rem;
+}
+
+.notification p {margin: 0;}
+
+.pending {background: var(--color-info-darker);}
+.success {background: var(--color-success-darker);}
+.error {background: var(--color-danger-darker);}
