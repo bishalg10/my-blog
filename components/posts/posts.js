@@ -4,7 +4,7 @@ const Posts = props => {
 
     const {posts} = props;
 
-    return <ul>
+    return <ul className="posts">
         {posts.map(post => <PostItem key={post.slug} post={post} />)}
     </ul>
 

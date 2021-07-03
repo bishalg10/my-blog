@@ -1,8 +1,8 @@
-import Posts from "./posts/posts";
+import Posts from "../posts/posts";
 
 const FeaturedPosts = props => {
 
-    return <section className="featured-posts">
+    return <section>
         <h3>Featured Posts</h3>
         <Posts posts={props.posts} />
     </section>

@@ -5,8 +5,7 @@ const PostItem = props => {
 
     const {image, title, date, excerpt, slug} = props.post;
     const linkPath = `/posts/${slug}`;
-    // const imagePath = `/images/posts/${slug}/${image}`;
-    const imagePath = `/images/posts/nextjs.png`;
+    const imagePath = `/images/posts/${slug}/${image}`;
     const formattedDate = new Date(date).toLocaleDateString('en-US', {day: 'numeric', month: 'long', year: 'numeric'})
 
     return <li>
